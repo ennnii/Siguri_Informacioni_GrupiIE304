@@ -1,0 +1,7 @@
+[Unit]
+Description=SI Log Event Manager - Daily Report
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/si-log-event-manager
+ExecStart=/usr/bin/python3 -m src.raport --db %h/si-log-event-manager/security.db --out %h/si-log-event-manager/reports

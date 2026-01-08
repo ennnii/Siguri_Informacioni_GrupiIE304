@@ -1,0 +1,15 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Local data
+security.db
+*.db
+reports/*.txt
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

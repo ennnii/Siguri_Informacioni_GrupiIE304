@@ -1,0 +1,12 @@
+[Unit]
+Description=SI Log Event Manager - File Monitor
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/si-log-event-manager
+ExecStart=/usr/bin/python3 -m src.monitor --path %h --recursive --db %h/si-log-event-manager/security.db
+Restart=always
+
+[Install]
+WantedBy=default.target

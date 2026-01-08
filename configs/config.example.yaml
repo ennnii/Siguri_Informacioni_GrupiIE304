@@ -1,0 +1,15 @@
+# config.example.yaml
+# Kjo file eshte vetem shembull. Kopjoje si config.yaml dhe ndrysho sipas nevojes.
+
+monitor:
+  path: "/home/USER"
+  recursive: true
+  ignore_suffixes: [".swp", ".tmp", "~", ".log"]
+  db: "security.db"
+  log_file: null   # p.sh. "/var/log/si-monitor.log"
+
+scheduler:
+  admin_email: "admin@example.com"
+  report_time: "23:59"
+  check_minutes: 10
+  reports_dir: "reports"
