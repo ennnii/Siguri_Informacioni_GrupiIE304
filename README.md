@@ -44,7 +44,7 @@ python3 main.py
 ```
 
 ## Systemd (si Linux application)
-Ke shembuj te gatshem ne folderin `systemd/`.
+shembuj te gatshem ne folderin `systemd/`.
 
 ### Monitor service
 - Kopjo `systemd/si-monitor.service` ne `~/.config/systemd/user/`
@@ -69,6 +69,3 @@ systemctl --user list-timers | grep si-report
 - `venv/` nuk komitohet (eshte OS-specific + e rrit repo size)
 - `reports/*.txt` nuk komitohen (mund te kene info reale)
 - ruaj vetem `requirements.txt` dhe kodin
-
-## License
-MIT (shto ne qofte se do)
